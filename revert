@@ -1,0 +1,54 @@
+*********Git revert commands***********
+
+  178  cd singaporegit/
+  179  ls
+  181  git status
+  183  git log
+  184  cat >revertfile
+:- making paneer recipe
+  185  git add .
+  187  git commit -m "first shaahi panner"
+  190  cat >revertfile
+:-Wrong commands
+  191  git add .
+  192  git commit -m "mashrrom commit"
+  193  git log
+  194  cat revertfile
+  196  git add .
+  197  git commit -m "wrong commit"
+  198  git log
+  199  cat revertfile
+  200  git revert (this is comit id which one want to ignore -d21f0cc4df21d6f10e9940c26b6e14ed606b8d19)
+  201  git log
+  202  ls
+  203  cat revertfile
+  204  git log --oneline
+
+*********Git untrack file delete*************
+
+
+  207  git status
+  209  git clean -n
+  210  git clean -f
+  211  ls
+
+**********Git taging************
+
+  214  git log --oneline
+  215  git tag -a impotant -m "this is impotant file" 6b9a767
+  216  git tag
+  217  git show impotant
+  220  git tag
+  222  git tag -d impotant(delete tag)
+  223  git tag
+ 
+**********Git clone**************
+
+       git clone https://github.com/devroy-ops/centralgit.git
+  230  ls
+  231  cd centralgit/
+  232  ls
+  236  touch filedev
+  237  git add .
+  238  git commit -m "last commit"
+  239  git push origin master
